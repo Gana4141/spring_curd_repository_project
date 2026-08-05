@@ -35,6 +35,7 @@ public class TouristOperationController
         catch (Exception e)
         {
             e.printStackTrace();
+            System.out.println("==============");
             return new ResponseEntity<>(
                     "Problem in Tourist Enrollment",
                     HttpStatus.INTERNAL_SERVER_ERROR);
