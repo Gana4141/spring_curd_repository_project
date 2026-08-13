@@ -76,7 +76,7 @@ public class TouristsMgmtServiceImpl implements ITouristMgmtService
     	{
     		touristRepo.deleteById(id);
     	}
-    	return id+"ID Tourist found & Deleted";
+    	return id+"ID Tourist found & Deleted:....";
     }
      @Override
     public String removeTouristByBudgetRange(double start, double end)
