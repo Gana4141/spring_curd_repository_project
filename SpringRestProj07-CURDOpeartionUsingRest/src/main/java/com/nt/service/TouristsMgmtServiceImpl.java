@@ -55,7 +55,7 @@ public class TouristsMgmtServiceImpl implements ITouristMgmtService
 	
         touristRepo.save(tourist);
 
-        return "Tourist updated successfully with id : " + tourist.getId();
+        return "id sucessfully updated : " + tourist.getId();
     }
     
     
