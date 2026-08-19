@@ -17,7 +17,7 @@ public class TouristsMgmtServiceImpl implements ITouristMgmtService
 	public String registerTourist(Tourist tourist)
 	{
 	int idVales=touristRepo.save(tourist).getId();
-	return "Tourist is registered having the id vales is :"+idVales;
+	return "Tourist id is  :"+idVales;
 	}
 	@Override
 	public List<Tourist> fecthAllTourist()
@@ -51,7 +51,7 @@ public class TouristsMgmtServiceImpl implements ITouristMgmtService
         Tourist existingTourist = touristRepo.findById(tourist.getId())
                 .orElseThrow(() -> 
                     new IllegalArgumentException(
-                        "Tourist not found with id : " + tourist.getId()));
+                        "id is not found it tourist: " + tourist.getId()));
 	
         touristRepo.save(tourist);
 
